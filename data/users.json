@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "username": "Saurav",
+        "age": 19,
+        "gender": "Male",
+        "location": "Bihar",
+        "password": "saurav12"
+    },
+    {
+        "id": 2,
+        "username": "sk",
+        "password": "sk",
+        "age": "18",
+        "gender": "Male",
+        "location": "New Delhi"
+    },
+    {
+        "id": 3,
+        "username": "Saurav real",
+        "password": "sk",
+        "age": "19",
+        "gender": "Male",
+        "location": "Bihar"
+    },
+    {
+        "id": 4,
+        "username": "ankit",
+        "password": "Ankit@2006",
+        "age": "20",
+        "gender": "Male",
+        "location": "Saharsa"
+    },
+    {
+        "id": 5,
+        "username": "sudarshan_devs",
+        "password": "sudarshan_devs",
+        "age": "21",
+        "gender": "Male",
+        "location": "India"
+    },
+    {
+        "id": 6,
+        "username": "sudarshan_devs",
+        "password": "sudarshan_devs",
+        "age": "21",
+        "gender": "Male",
+        "location": "India"
+    }
+]

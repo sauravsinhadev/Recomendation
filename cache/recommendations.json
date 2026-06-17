@@ -1,0 +1,762 @@
+{
+    "1": [
+        {
+            "id": 396,
+            "score": 355.64,
+            "category": "Fashion"
+        },
+        {
+            "id": 5999,
+            "score": 355.459,
+            "category": "Fashion"
+        },
+        {
+            "id": 4705,
+            "score": 355.104,
+            "category": "Fashion"
+        },
+        {
+            "id": 2922,
+            "score": 144.61,
+            "category": "Books"
+        },
+        {
+            "id": 7,
+            "score": 140.872,
+            "category": "Mobile"
+        },
+        {
+            "id": 9843,
+            "score": 133.435,
+            "category": "Laptop"
+        },
+        {
+            "id": 507,
+            "score": 128.076,
+            "category": "Sports"
+        },
+        {
+            "id": 464,
+            "score": 127.743,
+            "category": "Books"
+        },
+        {
+            "id": 1352,
+            "score": 127.657,
+            "category": "Books"
+        },
+        {
+            "id": 4,
+            "score": 125.779,
+            "category": "Gaming"
+        },
+        {
+            "id": 755,
+            "score": 124.895,
+            "category": "Fitness"
+        },
+        {
+            "id": 8,
+            "score": 118.508,
+            "category": "Gaming"
+        },
+        {
+            "id": 8738,
+            "score": 118.396,
+            "category": "Sports"
+        },
+        {
+            "id": 8786,
+            "score": 117.692,
+            "category": "Mobile"
+        },
+        {
+            "id": 5895,
+            "score": 116.425,
+            "category": "Sports"
+        },
+        {
+            "id": 1,
+            "score": 116.289,
+            "category": "Electronics"
+        },
+        {
+            "id": 9949,
+            "score": 115.388,
+            "category": "Electronics"
+        },
+        {
+            "id": 7949,
+            "score": 114.728,
+            "category": "Home"
+        },
+        {
+            "id": 10000,
+            "score": 114.513,
+            "category": "Electronics"
+        },
+        {
+            "id": 5431,
+            "score": 108.228,
+            "category": "Laptop"
+        },
+        {
+            "id": 5862,
+            "score": 108.193,
+            "category": "Home"
+        },
+        {
+            "id": 7199,
+            "score": 108.181,
+            "category": "Laptop"
+        },
+        {
+            "id": 6146,
+            "score": 108.133,
+            "category": "Mobile"
+        },
+        {
+            "id": 9454,
+            "score": 108.131,
+            "category": "AI"
+        },
+        {
+            "id": 2320,
+            "score": 108.111,
+            "category": "Gaming"
+        },
+        {
+            "id": 4389,
+            "score": 108.106,
+            "category": "Home"
+        },
+        {
+            "id": 8045,
+            "score": 108.085,
+            "category": "AI"
+        },
+        {
+            "id": 2570,
+            "score": 108.082,
+            "category": "Fitness"
+        },
+        {
+            "id": 1694,
+            "score": 108.077,
+            "category": "AI"
+        },
+        {
+            "id": 4445,
+            "score": 108.041,
+            "category": "Fitness"
+        }
+    ],
+    "2": [
+        {
+            "id": 9250,
+            "score": 1310.891,
+            "category": "Sports"
+        },
+        {
+            "id": 3674,
+            "score": 1310.713,
+            "category": "Sports"
+        },
+        {
+            "id": 6116,
+            "score": 1307.925,
+            "category": "Sports"
+        },
+        {
+            "id": 7441,
+            "score": 676.801,
+            "category": "Mobile"
+        },
+        {
+            "id": 9493,
+            "score": 676.453,
+            "category": "Mobile"
+        },
+        {
+            "id": 1585,
+            "score": 676.203,
+            "category": "Mobile"
+        },
+        {
+            "id": 1570,
+            "score": 569.023,
+            "category": "Electronics"
+        },
+        {
+            "id": 8100,
+            "score": 568.938,
+            "category": "Electronics"
+        },
+        {
+            "id": 1321,
+            "score": 568.664,
+            "category": "Electronics"
+        },
+        {
+            "id": 2320,
+            "score": 381.91,
+            "category": "Gaming"
+        },
+        {
+            "id": 983,
+            "score": 381.036,
+            "category": "Gaming"
+        },
+        {
+            "id": 9791,
+            "score": 380.83,
+            "category": "Gaming"
+        },
+        {
+            "id": 8929,
+            "score": 329.673,
+            "category": "Home"
+        },
+        {
+            "id": 7579,
+            "score": 329.292,
+            "category": "Home"
+        },
+        {
+            "id": 2082,
+            "score": 328.492,
+            "category": "Home"
+        },
+        {
+            "id": 124,
+            "score": 191.193,
+            "category": "Books"
+        },
+        {
+            "id": 4890,
+            "score": 190.347,
+            "category": "Books"
+        },
+        {
+            "id": 7695,
+            "score": 190.301,
+            "category": "Books"
+        },
+        {
+            "id": 1005,
+            "score": 140.363,
+            "category": "Fashion"
+        },
+        {
+            "id": 755,
+            "score": 138.601,
+            "category": "Fitness"
+        },
+        {
+            "id": 5,
+            "score": 115.866,
+            "category": "Fashion"
+        },
+        {
+            "id": 9843,
+            "score": 115.827,
+            "category": "Laptop"
+        },
+        {
+            "id": 9857,
+            "score": 115.03,
+            "category": "Fashion"
+        },
+        {
+            "id": 5431,
+            "score": 114.434,
+            "category": "Laptop"
+        },
+        {
+            "id": 7199,
+            "score": 114.387,
+            "category": "Laptop"
+        },
+        {
+            "id": 9454,
+            "score": 114.337,
+            "category": "AI"
+        },
+        {
+            "id": 8045,
+            "score": 114.291,
+            "category": "AI"
+        },
+        {
+            "id": 2570,
+            "score": 114.289,
+            "category": "Fitness"
+        },
+        {
+            "id": 1694,
+            "score": 114.284,
+            "category": "AI"
+        },
+        {
+            "id": 4445,
+            "score": 114.247,
+            "category": "Fitness"
+        }
+    ],
+    "3": [
+        {
+            "id": 2316,
+            "score": 825.34,
+            "category": "Gaming"
+        },
+        {
+            "id": 7073,
+            "score": 825.263,
+            "category": "Gaming"
+        },
+        {
+            "id": 2471,
+            "score": 824.998,
+            "category": "Gaming"
+        },
+        {
+            "id": 124,
+            "score": 621.048,
+            "category": "Books"
+        },
+        {
+            "id": 4890,
+            "score": 620.201,
+            "category": "Books"
+        },
+        {
+            "id": 7695,
+            "score": 620.155,
+            "category": "Books"
+        },
+        {
+            "id": 7441,
+            "score": 525.836,
+            "category": "Mobile"
+        },
+        {
+            "id": 9493,
+            "score": 525.488,
+            "category": "Mobile"
+        },
+        {
+            "id": 1585,
+            "score": 525.238,
+            "category": "Mobile"
+        },
+        {
+            "id": 6818,
+            "score": 309.648,
+            "category": "Fashion"
+        },
+        {
+            "id": 3006,
+            "score": 308.614,
+            "category": "Fashion"
+        },
+        {
+            "id": 9545,
+            "score": 308.568,
+            "category": "Fashion"
+        },
+        {
+            "id": 5938,
+            "score": 297.527,
+            "category": "Sports"
+        },
+        {
+            "id": 6700,
+            "score": 297.495,
+            "category": "Sports"
+        },
+        {
+            "id": 9916,
+            "score": 297.417,
+            "category": "Sports"
+        },
+        {
+            "id": 2573,
+            "score": 247.043,
+            "category": "Fitness"
+        },
+        {
+            "id": 212,
+            "score": 247.007,
+            "category": "Fitness"
+        },
+        {
+            "id": 3931,
+            "score": 246.254,
+            "category": "Fitness"
+        },
+        {
+            "id": 2332,
+            "score": 191.032,
+            "category": "AI"
+        },
+        {
+            "id": 7526,
+            "score": 190.887,
+            "category": "AI"
+        },
+        {
+            "id": 8565,
+            "score": 190.519,
+            "category": "AI"
+        },
+        {
+            "id": 1,
+            "score": 139.884,
+            "category": "Electronics"
+        },
+        {
+            "id": 9949,
+            "score": 138.984,
+            "category": "Electronics"
+        },
+        {
+            "id": 7949,
+            "score": 138.324,
+            "category": "Home"
+        },
+        {
+            "id": 10000,
+            "score": 138.108,
+            "category": "Electronics"
+        },
+        {
+            "id": 9843,
+            "score": 130.779,
+            "category": "Laptop"
+        },
+        {
+            "id": 5431,
+            "score": 115.557,
+            "category": "Laptop"
+        },
+        {
+            "id": 5862,
+            "score": 115.522,
+            "category": "Home"
+        },
+        {
+            "id": 7199,
+            "score": 115.51,
+            "category": "Laptop"
+        },
+        {
+            "id": 4389,
+            "score": 115.435,
+            "category": "Home"
+        }
+    ],
+    "4": [
+        {
+            "id": 117,
+            "score": 282.028,
+            "category": "Gaming"
+        },
+        {
+            "id": 532,
+            "score": 281.774,
+            "category": "Gaming"
+        },
+        {
+            "id": 6682,
+            "score": 281.485,
+            "category": "Gaming"
+        },
+        {
+            "id": 7441,
+            "score": 263.545,
+            "category": "Mobile"
+        },
+        {
+            "id": 9493,
+            "score": 263.197,
+            "category": "Mobile"
+        },
+        {
+            "id": 1585,
+            "score": 262.947,
+            "category": "Mobile"
+        },
+        {
+            "id": 2,
+            "score": 165.71,
+            "category": "Books"
+        },
+        {
+            "id": 2922,
+            "score": 144.021,
+            "category": "Books"
+        },
+        {
+            "id": 507,
+            "score": 144.014,
+            "category": "Sports"
+        },
+        {
+            "id": 1005,
+            "score": 142.11,
+            "category": "Fashion"
+        },
+        {
+            "id": 755,
+            "score": 140.348,
+            "category": "Fitness"
+        },
+        {
+            "id": 8738,
+            "score": 132.743,
+            "category": "Sports"
+        },
+        {
+            "id": 5895,
+            "score": 131.257,
+            "category": "Sports"
+        },
+        {
+            "id": 1,
+            "score": 130.635,
+            "category": "Electronics"
+        },
+        {
+            "id": 9949,
+            "score": 129.735,
+            "category": "Electronics"
+        },
+        {
+            "id": 7949,
+            "score": 129.075,
+            "category": "Home"
+        },
+        {
+            "id": 10000,
+            "score": 128.859,
+            "category": "Electronics"
+        },
+        {
+            "id": 5,
+            "score": 113.087,
+            "category": "Fashion"
+        },
+        {
+            "id": 9843,
+            "score": 112.481,
+            "category": "Laptop"
+        },
+        {
+            "id": 9857,
+            "score": 111.684,
+            "category": "Fashion"
+        },
+        {
+            "id": 5431,
+            "score": 111.088,
+            "category": "Laptop"
+        },
+        {
+            "id": 5862,
+            "score": 111.054,
+            "category": "Home"
+        },
+        {
+            "id": 7199,
+            "score": 111.041,
+            "category": "Laptop"
+        },
+        {
+            "id": 9454,
+            "score": 110.991,
+            "category": "AI"
+        },
+        {
+            "id": 4389,
+            "score": 110.966,
+            "category": "Home"
+        },
+        {
+            "id": 3978,
+            "score": 110.963,
+            "category": "Books"
+        },
+        {
+            "id": 8045,
+            "score": 110.945,
+            "category": "AI"
+        },
+        {
+            "id": 2570,
+            "score": 110.943,
+            "category": "Fitness"
+        },
+        {
+            "id": 1694,
+            "score": 110.938,
+            "category": "AI"
+        },
+        {
+            "id": 4445,
+            "score": 110.901,
+            "category": "Fitness"
+        }
+    ],
+    "5": [
+        {
+            "id": 6526,
+            "score": 278.959,
+            "category": "Fashion"
+        },
+        {
+            "id": 2687,
+            "score": 278.613,
+            "category": "Fashion"
+        },
+        {
+            "id": 6609,
+            "score": 278.198,
+            "category": "Fashion"
+        },
+        {
+            "id": 2468,
+            "score": 269.153,
+            "category": "Laptop"
+        },
+        {
+            "id": 1713,
+            "score": 268.524,
+            "category": "Laptop"
+        },
+        {
+            "id": 2389,
+            "score": 268.392,
+            "category": "Laptop"
+        },
+        {
+            "id": 7,
+            "score": 135.815,
+            "category": "Mobile"
+        },
+        {
+            "id": 2,
+            "score": 132.744,
+            "category": "Books"
+        },
+        {
+            "id": 2922,
+            "score": 130.0,
+            "category": "Books"
+        },
+        {
+            "id": 507,
+            "score": 129.993,
+            "category": "Sports"
+        },
+        {
+            "id": 4,
+            "score": 127.014,
+            "category": "Gaming"
+        },
+        {
+            "id": 755,
+            "score": 126.13,
+            "category": "Fitness"
+        },
+        {
+            "id": 8,
+            "score": 115.554,
+            "category": "Gaming"
+        },
+        {
+            "id": 8738,
+            "score": 114.76,
+            "category": "Sports"
+        },
+        {
+            "id": 8786,
+            "score": 114.055,
+            "category": "Mobile"
+        },
+        {
+            "id": 5895,
+            "score": 113.471,
+            "category": "Sports"
+        },
+        {
+            "id": 1,
+            "score": 112.652,
+            "category": "Electronics"
+        },
+        {
+            "id": 2796,
+            "score": 112.223,
+            "category": "Electronics"
+        },
+        {
+            "id": 5862,
+            "score": 112.213,
+            "category": "Home"
+        },
+        {
+            "id": 6146,
+            "score": 112.153,
+            "category": "Mobile"
+        },
+        {
+            "id": 7319,
+            "score": 112.153,
+            "category": "Electronics"
+        },
+        {
+            "id": 9454,
+            "score": 112.15,
+            "category": "AI"
+        },
+        {
+            "id": 2320,
+            "score": 112.13,
+            "category": "Gaming"
+        },
+        {
+            "id": 4389,
+            "score": 112.125,
+            "category": "Home"
+        },
+        {
+            "id": 3978,
+            "score": 112.122,
+            "category": "Books"
+        },
+        {
+            "id": 348,
+            "score": 112.117,
+            "category": "Home"
+        },
+        {
+            "id": 8045,
+            "score": 112.104,
+            "category": "AI"
+        },
+        {
+            "id": 2570,
+            "score": 112.102,
+            "category": "Fitness"
+        },
+        {
+            "id": 1694,
+            "score": 112.097,
+            "category": "AI"
+        },
+        {
+            "id": 4445,
+            "score": 112.06,
+            "category": "Fitness"
+        }
+    ]
+}
