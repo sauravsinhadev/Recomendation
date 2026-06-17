@@ -1,229 +1,555 @@
 # 🧠 SynapseRec
 
-### A Real-Time Multi-Channel Hybrid Recommendation Engine
+<div align="center">
+
+# 🚀 SynapseRec
+
+### Real-Time Hybrid Recommendation Engine
+
+**Trending + Collaborative Filtering + Content Similarity + Session Intelligence + Embeddings**
+
+![Python](https://img.shields.io/badge/Python-3.8+-blue)
+![Flask](https://img.shields.io/badge/Flask-Web%20Framework-green)
+![License](https://img.shields.io/badge/License-MIT-orange)
+![Status](https://img.shields.io/badge/Status-Active-success)
+
+### Built for Next-Generation Recommendation Systems
+
+*Netflix Inspired • Gorse Inspired • Built from Scratch*
+
+</div>
 
 ---
 
-## 🚀 Overview
+# 🎯 What is SynapseRec?
 
-**SynapseRec** is a production-ready, highly sophisticated hybrid recommendation system built using **Python + Flask**. It bridges the gap between simple rule-based engines and complex deep-learning systems.
+SynapseRec is a hybrid recommendation engine that combines:
 
-By leveraging:
+✅ Content-Based Filtering
 
-* 📐 Vector Space Embeddings
-* 📊 Cosine Similarity (Trigonometric Matching)
-* 🔗 Jaccard Index (Collaborative Overlap)
-* ⏱️ Real-Time Session Decay
+✅ Collaborative Filtering
 
-SynapseRec delivers **highly personalized, diverse, and context-aware recommendations in real time**.
+✅ Session-Aware Recommendations
 
----
+✅ Trending Intelligence
 
-## 🏗️ Architectural Blueprint
+✅ Search Intent Analysis
 
-SynapseRec follows a **two-stage pipeline** (Retrieval → Ranking), inspired by systems used at Netflix, YouTube, and Google.
+✅ Embedding-Based Matching
 
-```
-                  +----------------------------------------------+
-                  |              PRODUCT CATALOG                 |
-                  +----------------------------------------------+
-                                         |
-                                         v
-+----------------------------------------------------------------------------------+
-|                              STAGE 1: RETRIEVAL                                  |
-|   (Fetches ~200–300 high-quality candidates from multiple channels)              |
-+----------------------------------------------------------------------------------+
-  |               |               |               |                 |            |
-  v               v               v               v                 v            v
-[Trending]   [Profile Cat]   [Profile Tag]   [Session State]   [Search Hist]  [Similar]
-  |               |               |               |                 |            |
-  +---------------+---------------+---------------+-----------------+------------+
-                                         |
-                                         v
-+----------------------------------------------------------------------------------+
-|                               STAGE 2: RANKING                                   |
-|   (Scores using cosine similarity & weighted signals)                            |
-+----------------------------------------------------------------------------------+
-                                         |
-                                         v
-+----------------------------------------------------------------------------------+
-|                             STAGE 3: DIVERSIFICATION                             |
-|   (Prevents echo chambers with category caps)                                    |
-+----------------------------------------------------------------------------------+
-                                         |
-                                         v
-                             🎯 FINAL USER DASHBOARD
-```
+✅ Diversity Re-Ranking
+
+✅ Real-Time Personalization
+
+Unlike traditional recommendation engines, SynapseRec merges multiple recommendation channels into a unified ranking system.
 
 ---
 
-## ⚡ Core Features
+# 🏗 Architecture
 
-### 🧩 Multi-Dimensional Embeddings
+```text
+                     USER ACTIONS
+                            │
+                            ▼
 
-* Converts product metadata (title, tags, description) into vector space
-* Enables semantic similarity matching
+     Likes ─ Saves ─ Views ─ Searches ─ Sessions
 
-### 📐 Cosine Similarity Matching
+                            │
+                            ▼
 
-* Measures angle between user preference vectors and product vectors
-* Ensures mathematically accurate recommendations
+┌────────────────────────────────────────────┐
+│            USER PROFILE ENGINE             │
+└────────────────────────────────────────────┘
 
-### ⏱️ Real-Time Session Decay
+                            │
+                            ▼
 
-* Tracks short-term intent using recency-based weighting
-* Adapts instantly to user behavior
+┌────────────────────────────────────────────┐
+│            CANDIDATE GENERATION            │
+└────────────────────────────────────────────┘
 
-### 🚫 Anti-Echo Chamber System
+     Trending Products
+     Category Match
+     Hashtag Match
+     Similar Products
+     Similar Users
+     Search History
+     Session State
 
-* Applies category caps per recommendation batch
-* Encourages discovery & diversity
+                            │
+                            ▼
 
-### ⚙️ Asynchronous Worker Engine
+          ~300 Candidate Products
 
-* Background thread computes heavy operations
-* Keeps API responses fast & non-blocking
+                            │
+                            ▼
 
----
+┌────────────────────────────────────────────┐
+│             RANKING ENGINE                 │
+└────────────────────────────────────────────┘
 
-## 📐 The Math Behind SynapseRec
+     Trending Score
+     Category Score
+     Tag Score
+     Session Score
+     Similar User Score
+     Similar Product Score
+     Embedding Score
+     Freshness Score
 
-### 1. Cosine Similarity
+                            │
+                            ▼
 
-Measures similarity between vectors:
+┌────────────────────────────────────────────┐
+│            DIVERSITY ENGINE                │
+└────────────────────────────────────────────┘
 
-```
-cos(θ) = (A · B) / (||A|| × ||B||)
-```
+     Category Caps
+     Echo Chamber Prevention
+     Exploration Boost
 
-* Higher value → stronger alignment
-* Used for content-based filtering
+                            │
+                            ▼
 
----
-
-### 2. Jaccard Index
-
-Measures overlap between sets:
-
-```
-J(A, B) = |A ∩ B| / |A ∪ B|
-```
-
-* Used for collaborative filtering
-* Compares user interests (tags, categories)
-
----
-
-## 📂 Project Structure
-
-```
-├── app.py                      # Core Flask app + background worker
-├── data/
-│   ├── users.json              # User data
-│   ├── product.json            # Product catalog
-│   └── interactions.json       # User behavior logs
-├── cache/                      # Auto-generated (worker output)
-│   ├── user_profiles.json
-│   ├── session_profiles.json
-│   ├── similar_products.json
-│   ├── similar_users.json
-│   ├── category_index.json
-│   ├── tag_index.json
-│   ├── text_index.json
-│   └── recommendations.json
-└── templates/                  # Frontend (Tailwind UI)
-    ├── index.html
-    ├── login.html
-    ├── register.html
-    └── dashboard.html
+                  FINAL FEED
 ```
 
 ---
 
-## ⚙️ Setup & Installation
+# 🔥 Recommendation Pipeline
 
-### 1️⃣ Requirements
+```mermaid
+flowchart TD
 
-* Python **3.8+**
+A[User Actions] --> B[Interaction Store]
 
----
+B --> C[User Profile Engine]
 
-### 2️⃣ Install Dependencies
+C --> D[Trending Engine]
+C --> E[Category Engine]
+C --> F[Hashtag Engine]
+C --> G[Session Engine]
+C --> H[Similar Users]
+C --> I[Similar Products]
+C --> J[Search History]
 
-```bash
-pip install Flask
+D --> K[Candidate Generator]
+E --> K
+F --> K
+G --> K
+H --> K
+I --> K
+J --> K
+
+K --> L[Ranking Engine]
+
+L --> M[Diversity Engine]
+
+M --> N[Final Recommendations]
 ```
 
 ---
 
-### 3️⃣ Run the Server
+# ⚙ Core Engines
 
-```bash
-python app.py
-```
+## 📈 Trending Engine
 
-* 🌐 Access: http://localhost:5000
-* 🔄 Background worker auto-starts
-* ♻️ Cache refresh interval: **60 seconds**
-
----
-
-## 📊 System Evaluation
-
-Evaluate recommendation quality using built-in metrics:
+Calculates popularity using:
 
 ```python
-from app import calculate_system_metrics
+score =
+likes * 5 +
+saves * 10 +
+views * 1
+```
 
-score = calculate_system_metrics(user_id=1, k=10)
-print(score)
+Purpose:
+
+* Viral products
+* Community favorites
+* Hot deals
+
+---
+
+## 🏷 Category Engine
+
+Learns:
+
+```json
+{
+  "Gaming": 120,
+  "Mobile": 30,
+  "Laptop": 90
+}
+```
+
+Recommends products from preferred categories.
+
+---
+
+## #️⃣ Hashtag Engine
+
+Tracks tag affinity:
+
+```json
+{
+  "gaming": 80,
+  "rtx": 40,
+  "fps": 25
+}
+```
+
+Matches products with similar tags.
+
+---
+
+## 👥 Similar User Engine
+
+Collaborative Filtering.
+
+Finds users with:
+
+* Similar categories
+* Similar hashtags
+* Similar embeddings
+
+Example:
+
+```text
+User A
+   │
+   ├──── 92%
+   │
+User B
+```
+
+Recommend products liked by User B.
+
+---
+
+## 📦 Similar Product Engine
+
+Finds related products using:
+
+* Category similarity
+* Tag similarity
+* Embedding similarity
+* Price similarity
+
+Example:
+
+```text
+Gaming Laptop
+       │
+       ├── RTX Laptop
+       ├── Gaming Notebook
+       └── Gaming Workstation
 ```
 
 ---
 
-## 📈 Metrics Explained
+## 🧠 Embedding Engine
 
-### 🎯 Precision @ K
+Converts products and users into vectors.
 
-> Out of K recommended items, how many were relevant?
+Example:
 
----
+```text
+User Vector
 
-### 🔍 Recall
+[0.82, 0.44, 0.71, 0.91]
+```
 
-> Out of all relevant items, how many did we successfully recommend?
+```text
+Product Vector
 
----
+[0.80, 0.42, 0.68, 0.89]
+```
 
-## 🧠 Why SynapseRec?
-
-* ⚡ Real-time personalization
-* 🧩 Hybrid (Content + Collaborative)
-* 📐 Strong mathematical foundation
-* 🚀 Production-ready architecture
-* 🛡️ Built-in diversity & bias control
+Similarity is measured using cosine similarity.
 
 ---
 
-## 💡 Future Enhancements
+## ⏱ Session Engine
 
-* Deep learning embeddings (BERT / transformers)
-* Redis / vector DB integration
-* Real-time streaming (Kafka)
-* A/B testing framework
+Tracks immediate intent.
 
----
+Example:
 
-## 📜 License
+```text
+Current Session
 
-MIT License — Free to use, modify, and scale 🚀
+Gaming Mouse
+Gaming Keyboard
+Gaming Monitor
+```
 
----
-
-## 👨‍💻 Author
-
-Built with precision and performance in mind.
+Boosts gaming recommendations instantly.
 
 ---
 
-> ⭐ If you like this project, consider giving it a star!
+## 🔍 Search Intent Engine
+
+Searches influence recommendations.
+
+Example:
+
+```text
+rtx laptop
+gaming laptop
+budget gaming
+```
+
+Future recommendations become gaming-focused.
+
+---
+
+## 🌱 Freshness Engine
+
+New products receive temporary boosts.
+
+```text
+Today Added Product
+       +
+Freshness Score
+```
+
+Improves discovery.
+
+---
+
+## 🎭 Diversity Engine
+
+Prevents:
+
+```text
+Gaming Laptop
+Gaming Laptop
+Gaming Laptop
+Gaming Laptop
+```
+
+Produces:
+
+```text
+Gaming Laptop
+Gaming Chair
+Gaming Mouse
+Gaming Monitor
+```
+
+---
+
+# 📐 Mathematical Foundation
+
+## Cosine Similarity
+
+```text
+cos(θ) = (A · B)
+          ────────
+          ||A|| ||B||
+```
+
+Measures vector similarity.
+
+---
+
+## Jaccard Similarity
+
+```text
+J(A,B)=|A∩B|/|A∪B|
+```
+
+Used for collaborative filtering.
+
+---
+
+## Final Ranking Formula
+
+```python
+final_score = (
+
+    trending_score * 0.15 +
+
+    category_score * 0.20 +
+
+    hashtag_score * 0.15 +
+
+    session_score * 0.10 +
+
+    similar_product_score * 0.15 +
+
+    similar_user_score * 0.10 +
+
+    embedding_score * 0.10 +
+
+    freshness_score * 0.03 +
+
+    diversity_score * 0.02
+)
+```
+
+---
+
+# 📂 Project Structure
+
+```text
+SynapseRec/
+
+├── app.py
+
+├── data/
+│   ├── users.json
+│   ├── product.json
+│   └── interactions.json
+
+├── cache/
+│   ├── recommendations.json
+│   ├── user_profiles.json
+│   ├── session_profiles.json
+│   ├── trending.json
+│   ├── similar_users.json
+│   ├── similar_products.json
+│   ├── category_index.json
+│   ├── tag_index.json
+│   └── text_index.json
+
+├── templates/
+│   ├── login.html
+│   ├── register.html
+│   ├── dashboard.html
+│   └── index.html
+```
+
+---
+
+# ⚡ Background Worker
+
+```text
+while True:
+
+    build_profiles()
+
+    build_trending()
+
+    build_similar_products()
+
+    build_similar_users()
+
+    build_recommendations()
+
+    sleep(60)
+```
+
+Benefits:
+
+* Fast dashboard loading
+* Cached recommendations
+* No expensive runtime calculations
+
+---
+
+# 🚀 Performance
+
+Current Architecture:
+
+```text
+10,000 Products
+100,000 Interactions
+1,000 Users
+```
+
+Supported comfortably using JSON cache architecture.
+
+Future scaling:
+
+```text
+Redis
+PostgreSQL
+FAISS
+Kafka
+Vector Databases
+```
+
+---
+
+# 🛣 Roadmap
+
+## Phase 2
+
+* Matrix Factorization
+* Implicit Feedback Learning
+* ANN Search
+* FAISS Integration
+
+## Phase 3
+
+* Redis Cache
+* PostgreSQL
+* Real-Time Updates
+
+## Phase 4
+
+* BERT Embeddings
+* Transformer Ranking
+* Deep Learning Recommendations
+
+## Phase 5
+
+* Multi-Armed Bandits
+* A/B Testing
+* Reinforcement Learning
+
+---
+
+# 📊 Current Capability
+
+| System                  | Approximation |
+| ----------------------- | ------------- |
+| Basic Recommender       | 100%          |
+| Content-Based System    | 90%           |
+| Collaborative Filtering | 75%           |
+| Gorse Concepts          | 75%           |
+| Netflix Concepts        | 20-25%        |
+
+---
+
+# 💡 Why SynapseRec?
+
+✅ Hybrid Recommendation Engine
+
+✅ Real-Time Session Awareness
+
+✅ Content + Collaborative Filtering
+
+✅ Explainable Architecture
+
+✅ Scalable Design
+
+✅ Easy to Extend
+
+✅ Built Entirely in Python
+
+---
+
+# 👨‍💻 Author
+
+Built from scratch as a learning-focused production-grade recommendation system.
+
+If you found this project useful:
+
+⭐ Star the repository
+
+🍴 Fork it
+
+🚀 Build something amazing with it
+
+---
+
+<div align="center">
+
+### 🧠 SynapseRec
+
+**Smart Recommendations. Real-Time Intelligence.**
+
+</div>
