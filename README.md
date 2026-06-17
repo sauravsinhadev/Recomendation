@@ -1,4 +1,9 @@
-SynapseRec 🧠A Real-Time Multi-Channel Hybrid Recommendation EngineSynapseRec is a production-ready, highly sophisticated hybrid recommendation system built in Python/Flask. It bridges the gap between simple heuristic rule engines and complex deep-learning clusters. By leveraging Vector Space Embeddings, Cosine Similarity Trigonometry, Jaccard Index Overlaps, and Short-Term Session Decay, SynapseRec delivers highly personalized, diverse, and contextualized recommendations in real time.🚀 Architectural BlueprintSynapseRec employs a two-stage pipeline (Retrieval & Ranking) identical to the architectural principles used by tech giants like Netflix, YouTube, and Google.                  +----------------------------------------------+
+SynapseRec 🧠
+A Real-Time Multi-Channel Hybrid Recommendation Engine
+SynapseRec is a production-ready, highly sophisticated hybrid recommendation system built in Python/Flask. It bridges the gap between simple heuristic rule engines and complex deep-learning clusters. By leveraging Vector Space Embeddings, Cosine Similarity Trigonometry, Jaccard Index Overlaps, and Short-Term Session Decay, SynapseRec delivers highly personalized, diverse, and contextualized recommendations in real time.
+🚀 Architectural Blueprint
+SynapseRec employs a two-stage pipeline (Retrieval & Ranking) identical to the architectural principles used by tech giants like Netflix, YouTube, and Google.
+                  +----------------------------------------------+
                   |              PRODUCT CATALOG                 |
                   +----------------------------------------------+
                                          |
@@ -27,7 +32,21 @@ SynapseRec 🧠A Real-Time Multi-Channel Hybrid Recommendation EngineSynapseRec 
                                          |
                                          v
                              [ FINAL USER DASHBOARD ]
-⚡ Key Core FeaturesMulti-Dimensional Content Embeddings: Text fields (titles, tags, and descriptions) are vectorized into spatial coordinates.Mathematical Trigonometric Matching: Utilizes Cosine Similarity to compute exact match angles between user profiles and products.Real-Time Session Decay: Tracks immediate user intent through an active-session memory loop using a recency decay multiplier ($1.0 + (\text{offset} \times 0.18)$).Anti-Echo Chamber Filter (Diversification): Restricts categories to a maximum count per dashboard render, ensuring users discover new segments.Asynchronous Background Worker: Executes resource-intensive matrix calculations on a dedicated daemon thread to prevent HTTP route blocking.📐 The Math Behind the Code1. Vector Space Cosine SimilarityTo measure how closely a product's content aligns with a user's taste, we calculate the cosine of the angle between their respective multi-dimensional vector matrices:$$\text{Similarity}(A, B) = \cos(\theta) = \frac{A \cdot B}{\|A\| \|B\|} = \frac{\sum_{i=1}^{n} A_i B_i}{\sqrt{\sum_{i=1}^{n} A_i^2} \sqrt{\sum_{i=1}^{n} B_i^2}}$$2. Jaccard Index (Collaborative Overlaps)For collaborative filtering overlaps between user interest matrices (e.g. comparing unique sets of tags), we calculate the ratio of the intersection size to the union size:$$J(A, B) = \frac{|A \cap B|}{|A \cup B|}$$📂 Project Structure├── app.py                      # Core Flask Application & Background Thread Service
+
+
+⚡ Key Core Features
+Multi-Dimensional Content Embeddings: Text fields (titles, tags, and descriptions) are vectorized into spatial coordinates.
+Mathematical Trigonometric Matching: Utilizes Cosine Similarity to compute exact match angles between user profiles and products.
+Real-Time Session Decay: Tracks immediate user intent through an active-session memory loop using a recency decay multiplier ().
+Anti-Echo Chamber Filter (Diversification): Restricts categories to a maximum count per dashboard render, ensuring users discover new segments.
+Asynchronous Background Worker: Executes resource-intensive matrix calculations on a dedicated daemon thread to prevent HTTP route blocking.
+📐 The Math Behind the Code
+1. Vector Space Cosine Similarity
+To measure how closely a product's content aligns with a user's taste, we calculate the cosine of the angle between their respective multi-dimensional vector matrices:
+2. Jaccard Index (Collaborative Overlaps)
+For collaborative filtering overlaps between user interest matrices (e.g. comparing unique sets of tags), we calculate the ratio of the intersection size to the union size:
+📂 Project Structure
+├── app.py                      # Core Flask Application & Background Thread Service
 ├── data/
 │   ├── users.json              # Demographic user registrations
 │   ├── product.json            # Base product catalog
@@ -46,11 +65,31 @@ SynapseRec 🧠A Real-Time Multi-Channel Hybrid Recommendation EngineSynapseRec 
     ├── login.html              # Form with focus transitions
     ├── register.html           # Advanced signup collecting demographic signals
     └── dashboard.html          # Dynamic personal recommendations grid
-⚙️ Setup and Installation1. RequirementsEnsure you have Python 3.8+ installed on your system.2. Install DependenciesInitialize and run the Flask instance:pip install Flask
-3. Running the ServerRun the application directly. Upon startup, the offline worker thread will automatically spin up, generate the database caches, and keep renewing recommendations every 60 seconds:python app.py
-The web interface will be accessible at http://localhost:5000.📊 System Evaluation MetricsWe don't guess accuracy—we measure it. You can evaluate the algorithm using the built-in system validator inside the application shell:# To calculate the performance index of any active user:
+
+
+⚙️ Setup and Installation
+1. Requirements
+Ensure you have Python 3.8+ installed on your system.
+2. Install Dependencies
+Initialize and run the Flask instance:
+pip install Flask
+
+
+3. Running the Server
+Run the application directly. Upon startup, the offline worker thread will automatically spin up, generate the database caches, and keep renewing recommendations every 60 seconds:
+python app.py
+
+
+The web interface will be accessible at http://localhost:5000.
+📊 System Evaluation Metrics
+We don't guess accuracy—we measure it. You can evaluate the algorithm using the built-in system validator inside the application shell:
+# To calculate the performance index of any active user:
 from app import calculate_system_metrics
 
 score = calculate_system_metrics(user_id=1, k=10)
 print(score)
-Metrics ExplainedPrecision @ K: "Out of the $K$ items suggested, what percentage did the user actually click/like?"Recall: "Out of all items in the catalog the user would have loved, what percentage did we successfully retrieve and present?"
+
+
+Metrics Explained
+Precision @ K: "Out of the  items suggested, what percentage did the user actually click/like?"
+Recall: "Out of all items in the catalog the user would have loved, what percentage did we successfully retrieve and present?"
